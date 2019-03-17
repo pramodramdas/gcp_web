@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: pram25/docker_backend
+        # image: pram25/docker_backend
+        image: gcr.io/try-kubernetes-233612/web_backend
         ports:
         - containerPort: 9090
         livenessProbe:

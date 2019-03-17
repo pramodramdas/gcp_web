@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: pram25/docker_client
+        # image: pram25/docker_client
+        image: gcr.io/try-kubernetes-233612/web_frontend
         env:
         - name: PORT
           value: "3000"
