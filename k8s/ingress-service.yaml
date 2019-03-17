@@ -14,9 +14,7 @@ spec:
         backend:
           serviceName: frontend-service
           servicePort: 3000
-  - http:
-      paths:
       - path: /api/
         backend:
           serviceName: backend-service
-          servicePort: 9090          
+          servicePort: 9090       
