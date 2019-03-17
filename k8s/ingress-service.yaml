@@ -10,7 +10,7 @@ spec:
         backend:
           serviceName: backend-service
           servicePort: 9090
-      - path: /*
+      - path: /
         backend:
           serviceName: frontend-service
           servicePort: 3000
