@@ -10,7 +10,7 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: forntend-service
+          serviceName: frontend-service
           servicePort: 3000
   - http:
       paths:
