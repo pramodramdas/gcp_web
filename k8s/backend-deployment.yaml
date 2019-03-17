@@ -19,10 +19,8 @@ spec:
         image: pram25/docker_backend
         ports:
         - containerPort: 9090
-readinessProbe:
-    httpGet:
-        path: /healthz
-        port: 80
-    initialDelaySeconds: 5
-    periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /api/getMessage
+            port: 9090
         
