@@ -23,4 +23,8 @@ spec:
           httpGet:
             path: /api/getMessage
             port: 9090
+        readinessProbe:
+          httpGet:
+            path: /api/getMessage
+            port: 9090
         
