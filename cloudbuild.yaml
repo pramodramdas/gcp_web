@@ -18,6 +18,9 @@ steps:
   - deployment
   - deployment/backend-dep
   - backend=gcr.io/try-kubernetes-233612/web_backend
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=standard-cluster-1'
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
   - set
