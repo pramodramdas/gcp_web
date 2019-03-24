@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/api/getMessage', (req, res) => {
-	res.send('hi there hello2');
+	res.send('hi there hello4');
 });
 
 app.listen(port, () => {
