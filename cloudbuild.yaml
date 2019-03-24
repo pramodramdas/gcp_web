@@ -11,6 +11,9 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/web_frontend']
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=standard-cluster-1'
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
   - set
