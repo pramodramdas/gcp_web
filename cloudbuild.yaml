@@ -18,7 +18,6 @@ steps:
   args:
   - set
   - image
-  - deployment
   - deployment/backend-dep
   - backend=gcr.io/try-kubernetes-233612/web_backend
   env:
@@ -28,7 +27,6 @@ steps:
   args:
   - set
   - image
-  - deployment
   - deployment/frontend-dep
   - backend=gcr.io/try-kubernetes-233612/web_frontend
   env:
