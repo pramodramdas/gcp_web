@@ -11,7 +11,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /api/
+      - path: /api/*
         backend:
           serviceName: backend-service
           servicePort: 9090
