@@ -11,12 +11,12 @@ spec:
   rules:
   - http:
       paths:
-      - path: /api/*
-        backend:
-          serviceName: backend-service
-          servicePort: 9090
       - path: /
         backend:
           serviceName: frontend-service
           servicePort: 3000
+      - path: /api/
+        backend:
+          serviceName: backend-service
+          servicePort: 9090
        
